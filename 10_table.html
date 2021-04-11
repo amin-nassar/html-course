@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables</title>
+</head>
+<body>
+  <!-- Table  -->
+  <table border="1" width="80%" align="center">
+    <!-- thead => Table Header -->
+    <thead>
+      <!-- tr => Table Row -->
+      <tr>
+        <!-- th => Table Header Cell -->
+        <!-- Already Bold And Centered (Specific To Header Only) -->
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+
+    <!-- tbody => Table Body -->
+    <tr>
+      <!-- td => Table Data Cell -->
+      <td>Amin</td>
+      <td>Nassar</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>Hasan</td>
+      <td>Mahmoud</td>
+
+      <!-- rowspan => Makes Certain Cell Take The Height Of 2 Rows -->
+      <td rowspan="2">1500</td>
+    </tr>
+    <tr>
+      <td>Marwan</td>
+      <td>Saleem</td>
+    </tr>
+    <tr>
+      <td>Hamed</td>
+      <td>Nassar</td>
+      <td>1800</td>
+    </tr>
+
+    <!-- tfoot => Table Footer -->
+    <tfoot>
+      <tr>
+
+        <!-- colspan => Makes Certain Cell Takes The Width Of 2 Or More Columns -->
+        <td colspan="2">Total Salary</th>
+        <td>5800</th>
+      </tr>
+    </tfoot>
+
+    <!-- caption => Used To Put the Title Of The Table -->
+    <caption>This Is The Table's Title (Description)</caption>
+  </table>
+</body>
+</html>
