@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lists UL, OL, DL</title>
+</head>
+<body>
+  <!-- Unordered List (ul) -->
+  <!-- List Item (li) -->
+  <!-- type Attribute => Determines The Symbol At The Beginning Of Each Item -->
+  <ul type="square">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <!-- Ordered Lists (ol) -->
+  <!-- start Attribute => Determines The Starting Point Of The List -->
+  <!-- type Attribute => Determines The Symbol Used To Order Items -->
+  <!-- reversed Attribute => Order The Items In Reverse -->
+  <ol start="4" type="A" reversed>
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+  </ol>
+
+  <!-- Description List (dl) -->
+  <!-- Description Term (dt) -->
+  <!-- Description Definition (dd) -->
+  <dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+    <dd>The Structure</dd>
+
+    <dt>CSS</dt>
+    <dd>Cascade Style Sheet</dd>
+    <dd>The Styling</dd>
+  </dl>
+
+  <!-- Nested Lists -->
+  <ol>
+    <li>HTML</li>
+    <li>CSS
+      <ul>
+        <li>Bootstrap</li>
+        <li>Tailwind</li>
+      </ul>
+    </li>
+    <li>JS
+      <ul>
+        <li>Vuejs</li>
+        <li>Angular</li>
+        <li>Reactjs</li>
+      </ul>
+    </li>
+  </ol>
+</body>
+</html>
