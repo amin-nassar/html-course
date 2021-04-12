@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Tag</title>
+</head>
+<body>
+  <!-- Audio Tag -->
+
+  <!-- Controls Attribute: Shows Audio Player Controls. -->
+  <!-- Muted Attribute: Makes The Audio File Mute Initially. -->
+  <!-- Loop Attribute: Makes The Audio File Goes Into Infinite Loop.-->
+  <!-- Autoplay Attribute: Makes The Audio File Plays When The Page Loads. -->
+
+  <audio controls loop autoplay muted>
+    <!-- Multilpe Sources In Case Of Them Isn't Supported By The Browser -->
+    <source src="./audio_files/sample.mp3" type="audio/mpeg">
+    <source src="./audio_files/sample.ogg" type="audio/ogg">
+    <source src="./audio_files/sample.wav" type="audio/wav">
+    This Text Is Displayed In Case the Browser Doesn't Support Audio Tags.
+  </audio>
+</body>
+</html>

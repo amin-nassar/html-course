@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic Elements</title>
+</head>
+<body>
+  <!-- in HTML4 Div (Division) Has No Meaning, It's Just a Container Of Other Elements -->
+  <!-- Instead Of Using Divs As Header/ Navigation Bar/ Footer/ Website Section/Blog Post
+  We Can Use Semantic (Meaningful) Elements => header/nav/footer/section/article -->
+
+  <!-- Header => <div class="header"></div> -->
+  <header>The Header Of The Website</header>
+
+  <!-- nav => <div class="navigation-bar"></div> -->
+  <nav>
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main => <div class="container"></div> -->
+  <main>
+    <h1>Has The Main Content Of The Website</h1>
+
+    <!-- section => <div class="section"></div> -->
+    <section>
+      <h2>Section Title</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatum repellat laudantium numquam quasi molestiae unde dicta doloribus itaque distinctio.</p>
+    </section>
+    <hr>
+    <section>
+      <h2>Section Title Again</h2>
+      <!-- article => <div class="post"></div> -->
+      <article>
+        <h3>Article Title</h3>
+        <p>Article Content</p>
+      </article>
+    </section>
+    <hr>
+
+    <!-- aside => <div class="side-bar"></div> -->
+    <aside>
+      Aside = Doesn't Really Appear On The Side, It Needs CSS To Be On the Side It's Just Semantically Aside Of Other Elements
+    </aside>
+  </main>
+  <hr>
+
+  <!-- 
+    picture => It Needs :
+  1) One Or More (source) tag with (media & srcset) attributes.
+  2) One (img) tag with (src & alt) attributes.
+  -->
+  <picture>
+    <source
+      media="(min-width:850px)" 
+      srcset="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"
+    >
+    <source
+      media="(min-width:650px)" 
+      srcset="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
+    >
+    <img src="./test_image_tag.jpeg" alt="Alt Text">
+  </picture>
+  <hr>
+
+  <!-- figure => I Has :
+  1) One (img) Tag with (src & alt) Attributes.
+  2) (figcaption) tag to Provide Caption For The Figure.-->
+  <figure>
+    <img src="./test_image_tag.jpeg" alt="Alternative Text">
+    <figcaption>This Is Image Caption (Semantic - HTML5)</figcaption>
+  </figure>
+
+  <hr>
+
+  <div>
+    <img src="./test_image_tag.jpeg" alt="Alt Text">
+    <p class="caption">This Is Image Caption (Old - HTML4)</p>
+  </div>
+  
+  <hr>
+
+  <!-- Footer => <div class="footer"></div> -->
+  <footer>The Footer Of The Website</footer>
+</body>
+</html>

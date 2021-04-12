@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Tag</title>
+</head>
+<body>
+  <!-- Video Tag -->
+
+  <!-- Controls Attribute: Shows Video Player Controls. -->
+  <!-- Muted Attribute: Makes The Video File Mute Initially. -->
+  <!-- Loop Attribute: Makes The Video File Goes Into Infinite Loop.-->
+  <!-- Autoplay Attribute: Makes The Video File Plays When The Page Loads. -->
+  <!-- Preload Attribte:  Makes The Video Loads Before User Even Reach It.-->
+
+  <!-- Width Attribute: Specifies The Width Of The Video Player -->
+  <!-- Height Attribute: Specifies The Height Of The Video Player -->
+
+  <!-- Poster Attribute: Puts Poster Until The Video Is Loaded -->
+
+  <video 
+    controls loop autoplay muted 
+    width="460" height="340" 
+    poster="https://static.toiimg.com/photo/72975551.cms"
+  >
+    <!-- Multilpe Sources In Case Of Them Isn't Supported By The Browser -->
+    <source src="./video_files/sample.mp4" type="audio/mp4">
+    <source src="./video_files/sample.webm" type="audio/webm">
+    This Text Is Displayed In Case the Browser Doesn't Support Video Tags.
+
+    <!-- track tag -->
+    <!-- Src Attribute: The Path Of The Text Track File. -->
+    <!-- Srclang Attribute: Determine The File's Language. -->
+    <!-- Label Attribute: The File's Name That Will Be Displayed For The User. -->
+    <!-- Kind Attribute: The Type Of The Text Track File (caption, subtitles, metadata, description) -->
+
+    <track src="track_file_en.vtt" srclang="en" label="English" kind="subtitles">
+    <track src="track_file_ar.vtt" srclang="ar" label="Arabic" kind="subtitles">
+  </video>
+</body>
+</html>
