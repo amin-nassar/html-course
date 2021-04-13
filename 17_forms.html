@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms And Inputs</title>
+</head>
+<body>
+
+  <!-- Form Tag -->
+  <!-- Action Attribute: The Back-End File That Forms Data Will Be Sent To -->
+  <!-- Method Attribute: The HTTP Method We Want To Submit The Form With (POST or GET) -->
+  <!-- Novalidate Attributes: Prevent Validation Of The Form (Only For Testing) -->
+  <!-- Target Attribute: To Submit The Form To The Same Page Or To Another Page -->
+  <form action="./17_forms.html" method="GET" target="_blank" novalidate>
+
+    <!-- Label Tag Is Used To Tell Used What Is This Field For -->
+    <label>Username: </label>
+
+    <!-- (Type) Tells The User What Is Expected Type Of Input In This Field -->
+    <!-- (Placeholder) Shows Text In The Field To Tell The User What He Should Put In The Field -->
+    <!-- (required) Prevents The Form From Submitting If It's Empty -->
+    <!-- (name) Specifies The Name Of The Variable That'll Contain The Value Of The Field In Back-End -->
+    <!-- (autofocus) Gives This Field The Focus When The Page Loads -->
+    <input 
+      type="text" 
+      placeholder="User Name" 
+      required 
+      autofocus
+      name="username"
+    >
+
+    <hr>
+
+    <label>Email: </label>
+
+    <!-- (value) Used To Set Default Value For The Field -->  
+    <!-- (readonly) Prevent User From Editing The Value In Field -->
+    <!-- (Type = Email) Makes Sure The Email Is Valid Before Submitting The Form -->
+    <input 
+      type="email" 
+      placeholder="User Email" 
+      value="amin.nassar.ce@gmail.com" 
+      name="useremail"
+      readonly
+    >
+
+    <hr>
+
+    <label>Password: </label>
+    <!-- (Type = Password) Makes The Text In The Field Obsecure (*********) -->
+    <!-- (minlength) The Min Number Of Characters User Can Put In The Field -->
+    <!-- (maxlength) The Max Number Of Characters User Can Put In The Field -->
+    <input 
+      type="password" 
+      placeholder="Password" 
+      name="userpassword"
+      minlength="8"
+      maxlength="20"
+    >
+
+    <hr>
+    <!-- (Type = Submit) Makes A Button To submit The Form -->
+    <!-- value Here Is Used To Change The Text On The Button -->
+    <input 
+      type="submit" 
+      value="Save Form" 
+      name="submitbutton"
+    >
+
+    <hr>
+
+    <!-- (Type = Hidden) Makes The Field Hidden From User -->
+    <label>Hidden Field Here</label>
+    <input type="hidden" name="hidden_field" value="test_value">
+
+    <hr>
+
+    <!-- (Type = Reset) Makes Button To Clear All Fields Of The Form -->
+    <input type="reset" value="Clear Form">
+
+    <hr>
+
+    <!-- (disabled) Prevent User From Using The Feild & Prevent The Field From Getting Sent -->
+    <!-- (Type = Color) Creates Color Picker -->
+    <input 
+      type="color"
+      name="chosen_color" 
+      disabled
+    >
+
+    <hr>
+
+    <!-- (Type = Range) Creates Range Silder -->
+    <!-- min => Minimum Value -->
+    <!-- max => Maximum Value -->
+    <!-- step => How Much Increment Will Be Made At a Time -->
+    <!-- Value => Starting Value Of The Range -->
+    <input type="range" name="range_input" min="0" max="100" step="5" value="40">
+
+    <hr>
+
+    <!-- (Type = Number) Creates Number Picker -->
+    <input type="number" name="number_input" min="0" max="10" step="2" value="4">
+
+    <hr>
+
+    <!-- (Type = Radio) Creates Radio Button -->
+    <!-- (checked) Makes The Radio Button Already Checked When Page Loads -->
+    <!-- (for) Links The Label To The Input (By ID) -->
+
+    <label>Gender: </label>
+    <input type="radio" id="male_choice" name="gender" value="male" checked>
+    <label for="male_choice">Male</label>
+    
+    <input type="radio" id="female_choice" name="gender" value="female">
+    <label for="female_choice">Female</label>
+
+    <hr>
+
+    <!-- (Type = Checkbox) Creates Check Box -->
+    <label>Hobbies: </label>
+    <input type="checkbox" name="hobbies" id="reading_choice" checked>
+    <label for="reading_choice">Reading</label>
+
+    <input type="checkbox" name="hobbies" id="sports_choice">
+    <label for="sports_choice">Sports</label>
+
+    <input type="checkbox" name="hobbies" id="music_choice">
+    <label for="music_choice">Music</label>
+
+    <input type="checkbox" name="hobbies" id="coding_choice">
+    <label for="coding_choice">Coding</label>
+
+    <hr>
+
+    <!-- Select Tag => Creates Combo Box-->
+
+    <!-- (multiple) Makes The User Able To Select More Than One Choice -->
+    <!-- (size) Show Certain Number Of Choices At a Time -->
+    <label for="movies">Choose Movie: </label>
+    <select name="movie_chosen" id="movies" multiple size="4">
+      <optgroup label="Sci-Fi">
+
+        <!-- (selected) Makes The Choice Already Selected -->
+        <option selected value="Interstellar">Interstellar</option>
+
+
+        <option value="Inception">Inception</option>
+        <option value="Tenet">Tenet</option>
+      </optgroup>
+      <optgroup label="War">
+        <option value="Hacksaw Ridge">Hacksaw Ridge</option>
+        <option value="Saving Private Ryan">Saving Private Ryan</option>
+        <option value="Fury">Fury</option>
+      </optgroup>
+      <optgroup label="Drama">
+        <option value="The Imitation Game">The Imitation Game</option>
+        <option value="A Beatiful Mind">A Beatiful Mind</option>
+        <option value="Begin Again">Begin Again</option>
+      </optgroup>
+    </select>
+
+    <hr>
+    <!-- TextArea => Creates Larger Text Field -->
+    <!-- (cols) Number Of Columns Available In TextArea (Controls The Width) -->
+    <!-- (rows) Number Of Rows Available In TextArea (Controls The Height) -->
+    <textarea name="text_area" id="" cols="100" rows="10" placeholder="Write Your Message"></textarea>
+    
+    <hr>
+
+    <!-- (Type = File) Creates File Picker To Upload Files to the Web Pages -->
+    <!-- (hidden) Mostly Ti Hide It And Create Custom File Upload With Stylings -->
+    <label for="file_input">Choose A File : </label>
+    <input type="file" id="file_input" name="file_chosen" hidden>
+
+    <hr>
+
+    <!-- (Type = URL) Makes Sure The Value Is Valid URL -->
+    <label for="url_input">URL : </label>
+    <input type="url" name="url_value" id="url_input">
+
+    <hr>
+
+    <!-- (Type - Search) Normal Text Field With Clear Button -->
+    <label for="search_input">Search : </label>
+    <input type="search" name="search_value" id="search_input">
+
+    <hr>
+
+    <!-- (Type = Datetime-Local) Creates Date Time Picker -->
+    <label for="date_time_input">Choose DateTime : </label>
+    <input type="datetime-local" name="chosen_date_time" id="date_time_input">
+
+    <hr>
+
+    <!-- Datalist  -->
+    <label for="datalist_input">Choose Programming Language</label>
+
+    <!-- (list) It's Value is The Id Of The Datalist -->
+    <input type="text" list="programming" name="programming_language">
+
+    <datalist id="programming">
+      <option value="Python">Py</option>
+      <option value="PHP">PHP</option>
+      <option value="JS">JS</option>
+      <option value="TS">TS</option>
+      <option value="C++">C++</option>
+      <option value="C#">C#</option>
+      <option value="Java">Java</option>
+    </datalist>
+  </form>
+</body>
+</html>
