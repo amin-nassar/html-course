@@ -25,6 +25,6 @@ Course Files Are Kept In This Repo. In Order To Save Them As Future Reference Wh
 13. [Semantic Elements (How To Use Meaningful Elements)](https://www.youtube.com/watch?v=xlQwlfvrDuI&list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji&index=19)
 14. [How To Display & Control Audio Player](https://www.youtube.com/watch?v=xlQwlfvrDuI&list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji&index=22)
 15. [How To Display & Control Video Player](https://www.youtube.com/watch?v=xlQwlfvrDuI&list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji&index=23)
-16. [How To Display, Validate, Control, and Submit Forms.] (https://www.youtube.com/watch?v=xlQwlfvrDuI&list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji&index=24)
+16. [How To Display, Validate and Submit Forms (With Different Input Types)](https://www.youtube.com/watch?v=xlQwlfvrDuI&list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji&index=24)
 17. [How To Display Quotes and Control Text Direction.](https://www.youtube.com/watch?v=AzjtVtxoBLc&list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji&index=33)
 18. [Introduction To Web Accessibility](https://www.youtube.com/watch?v=lSqXHePabFo&list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji&index=35)
