@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two</title>
+</head>
+<body>
+  <form method="GET">
+    <label for="token">Token : </label>
+    <input type="text" id="token" name="token" hidden value="b92f1fc2fce391ad7af633723afd3055">
+    <br>
+    <label for="email">Email : </label>
+    <input type="email" id="email" readonly value="o@o.com" name="email">
+    <br>
+    <label for="username">Username : </label>
+    <input type="text" autofocus id="username" name="username" minlength="5" maxlength="20" required>
+    <hr>
+    <input type="checkbox" id="analysis" name="skills" value="Analysis" checked> 
+    <label for="analysis">Analysis</label> <br>
+
+    <input type="checkbox" id="logical-thinking" name="skills" value="logical-thinking"> 
+    <label for="logical-thinking">Logical Thinking</label> <br>
+
+    <input type="checkbox" id="problem-solving" name="skills" value="problem-solving">
+    <label for="problem-solving">Problem Solving</label> <br>
+
+    <hr>
+
+    <input type="radio" id="front-end" name="job" value="front-end" checked> 
+    <label for="front-end">Front-End</label> <br>
+
+    <input type="radio" id="back-end" name="job" value="back-end"> 
+    <label for="back-end">Back-End</label> <br>
+
+    <input type="radio" id="ui-ux" name="job" value="ui-ux">
+    <label for="ui-ux">UI - UX</label> <br>
+
+    <input type="radio" id="database" name="job" value="database"> 
+    <label for="database">DataBase</label> <br>
+
+    <hr>
+    <button type="reset">Empty</button>
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>
